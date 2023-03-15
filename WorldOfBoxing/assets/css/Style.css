@@ -1,0 +1,695 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@100&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+ 
+}
+
+
+/* Start of the navigation  */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  #main {
+    transition: .5s;
+    padding: 16px;
+  }
+ 
+  .icona {
+   
+    margin-left: 90px;
+  }
+  /* #main:hover{
+    transform: scale(1.2);
+    
+}
+#main .icona a:hover{
+transform: none;
+} */
+
+  /* End of the navigation  */
+
+/* Start of grid layout */
+
+.grid-template{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-areas: "navigation"
+                           "main";
+}
+.grid2{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "news1"
+                         "news2" 
+                         "news3";
+    
+}
+.grid3{
+    display: grid;
+    margin-top: 50px;
+    grid-template-columns: 1fr;
+    grid-template-areas: "new1"
+                            "new3 "
+                            "new4"
+                            "new5"
+                            "new2"
+                            "space"
+                             "footer";
+
+}
+.navigation{
+    grid-area: navigation;
+    background-color:black;
+    
+
+}
+.space{
+    grid-area: space;
+    background-color: transparent;
+    width: 100%;
+    margin-top: 500px;
+    
+}
+
+.main{
+   
+    grid-area: main;
+    position: relative;
+    background-color: red;
+    width: 100%;
+
+}
+.main2{
+    font-family: "Nunito";
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); 
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 30px;
+}
+.main:hover .main2 {
+    opacity: 1;
+  }
+
+.main img{
+    display: block;
+    width: 100%;
+}
+.news1{
+    position: relative;
+    grid-area: news1;
+    background-color: red;
+    width: 100%;
+}
+
+.news2{
+    position: relative;
+    grid-area: news2;
+    background-color: blue;
+    width: 100%;
+}
+
+.news3{
+    position: relative;
+    grid-area: news3;
+    background-color: aqua;
+    width: 100%;
+}
+.news1 img{
+    display: block;
+    width: 100%;
+}
+.news2 img{
+    display: block;
+    width: 100%;
+}
+.news3 img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.news-txt{
+    font-family: "Saira";
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); 
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 30px;
+   
+}
+.news1:hover .news-txt {
+    opacity: 1;
+  }
+
+  .news2:hover .news-txt {
+    opacity: 1;
+  }
+  .news3:hover .news-txt {
+    opacity: 1;
+  }
+
+.new1{
+    grid-area: new1;
+    color: white;
+    background-color: rgb(70, 70, 70);
+    width: 100%;
+}
+.new2{
+    grid-area: new2;
+    background-color: red;
+    width: 100%;
+}
+.new3{
+    grid-area: new3;
+    background-color: rgb(70, 70, 70);
+    color: white;
+    width: 100%;
+}
+.new4{
+    grid-area: new4;
+    background-color: rgb(70, 70, 70);
+    color: white;
+    width: 100%;
+}
+.new5{
+    margin-top: 4px;
+    margin-bottom: 40px;
+    grid-area: new5;
+    background-color: rgb(31, 31, 31);
+    color: white;
+    width: 100%;
+}
+.new1 img{
+    padding: 15px;
+    position: relative;
+    float: left;
+    width: 92%;
+    height: 50%;
+}
+.new1 h1{
+    font-family: "Nunito";
+    padding-top: 10px;
+    font-size: 130%;
+    
+}
+.new1 .text{
+    font-family: "Saira";
+    margin-top:20px;
+    padding: 3px;
+    font-size: 100%;
+}
+.new2 {
+  background-image: url(/assets/media/RingBellApp.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width:100%;
+  
+  
+}
+.new2 h1{
+    font-family: "Nunito";
+    color: white;
+    background-color: rgba(255, 0, 0, 0.575);
+    text-align: center;
+    font-size: 300%;
+   
+}
+.new3 img{
+    padding: 15px;
+    position: relative;
+    float: left;
+    width: 92%;
+    height: 50%;
+   
+}
+.new3 h1{
+    font-family: "Nunito";
+    padding-top: 10px;
+    font-size: 130%;
+    
+}
+.new3 .text{
+    font-family: "Saira";
+    margin-top:20px;
+    padding: 3px;
+    font-size: 150%;
+}
+.new4 img{
+    padding: 15px;
+    position: relative;
+    float: left;
+    width: 92%;
+    height: 50%;
+   
+}
+.new4 h1{
+    font-family: "Nunito";
+    padding-top: 10px;
+    font-size: 130%;
+    
+}
+.new4 .text{
+    margin-top:20px;
+    padding: 3px;
+    font-size: 150%;
+    font-family: "Saira";
+}
+
+.new5 iframe{
+    padding: 15px;
+    position: relative;
+    float: left;
+    width: 92%;
+   height: 300PX;
+}
+.new5 h1{
+    font-family: "Nunito";
+    padding-top: 10px;
+    font-size: 130%;
+    
+}
+.new5 .text{
+    margin-top:20px;
+    padding: 3px;
+    font-size: 150%;
+    font-family: "Saira";
+}
+.footer{
+    padding-top: 100px;
+    grid-area: footer;
+    font-size: 150%;
+    background-color: #111;
+    color: white;
+    text-align: center;
+    height: 10vh;
+}
+/* Flip effect beginning*/
+.maincontainer{
+    position:relative;
+}
+.thecard{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 1s ease;
+}
+.thecard:hover{
+    transform: rotateY(180deg);
+}
+.thefront{
+position: absolute;
+width: 100%;
+backface-visibility: hidden;
+
+}
+.theback{
+    position: absolute;
+    width: 100%;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    font-family: "Saira";
+    text-align: center;
+    font-size: 150%;
+    color: white;
+    }
+.theback div{
+    color: white;
+    font-weight: bold;
+    background-color: rgba(255, 0, 0, 0.767);
+}
+
+
+@media only screen and (min-width:900px){
+    .grid-template{
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-areas: "navigation navigation navigation "
+                               ". main .";
+    }
+    .grid2{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: ". news1 news2 news3 .";
+        
+    }
+    .grid3{
+        display: grid;
+        margin-top: 50px;
+        grid-template-columns: 1.68fr 3fr 2fr 1.68fr;
+        grid-template-areas: ". new1 new2 ."
+        ". new3 new2 ."
+        ". new4 new2 ."
+        ". new5 new5."
+        "space space space space"
+        "footer footer footer footer";
+    
+    }
+    .space{
+        grid-area: space;
+        margin-top: 0;
+    }
+    .navigation{
+        grid-area: navigation;
+        background-color:black;
+        
+    
+    }
+    .main{
+        grid-area: main;
+        
+        background-color: red;
+        text-align: center;
+        width: 100%;
+    
+    }
+    .main2{
+        font-family: "Nunito";
+        position: absolute;
+        bottom: 0;
+        background: rgb(0, 0, 0);
+        background: rgba(0, 0, 0, 0.5); 
+        color: #f1f1f1;
+        width: 90%;
+        transition: .5s ease;
+        opacity:0;
+        color: white;
+        font-size: 40px;
+        padding: 20px;
+       
+        
+    }
+    .main:hover .main2 {
+        opacity: 1;
+      }
+    
+    .main img{
+        display: block;
+        width: 100%;
+    }
+    .news1{
+        grid-area: news1;
+        background-color: red;
+    }
+    
+    .news2{
+       
+        grid-area: news2;
+        background-color: blue;
+    }
+    
+    .news3{
+       
+        grid-area: news3;
+        background-color: aqua;
+    }
+    .news1 img{
+        display: block;
+        width: 100%;
+    }
+    .news2 img{
+        display: block;
+        width: 100%;
+    }
+    .news3 img{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    .news-txt{
+        font-family: "Saira";
+        position: absolute;
+        bottom: 0;
+        background: rgb(0, 0, 0);
+        background: rgba(0, 0, 0, 0.5); 
+        color: #f1f1f1;
+        width: 80%;
+        transition: .5s ease;
+        opacity:0;
+        color: white;
+        font-size: 20px;
+        padding: 25px;
+    }
+    .news1:hover .news-txt {
+        opacity: 1;
+      }
+    
+      .news2:hover .news-txt {
+        opacity: 1;
+      }
+      .news3:hover .news-txt {
+        opacity: 1;
+      }
+    
+    .new1{
+        grid-area: new1;
+        color: white;
+        background-color: rgb(70, 70, 70);
+    }
+    .new2{
+        grid-area: new2;
+        background-color: red;
+        width: 100%;
+    }
+    .new3{
+        grid-area: new3;
+        background-color: rgb(70, 70, 70);
+        color: white;
+    }
+    .new4{
+        grid-area: new4;
+        background-color: rgb(70, 70, 70);
+        color: white;
+    }
+    .new5{
+        margin-top: 4px;
+        margin-bottom: 40px;
+        grid-area: new5;
+        background-color: rgb(31, 31, 31);
+        color: white;
+    }
+    .new1 img{
+        padding: 15px;
+        position: relative;
+        float: left;
+        width: 50%;
+        height: 50%;
+    }
+    .new1 h1{
+        font-family: "Nunito";
+        padding-top: 10px;
+        font-size: 1.6rem;
+        
+    }
+    .new1 .text{
+        font-family: "Saira";
+        margin-top:20px;
+        padding: 3px;
+        font-size:1.2rem;
+    }
+    .new2 {
+      background-image: url(../media/RingBellApp.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      
+      
+    }
+    .new2 h1{
+        font-family: "Nunito";
+        color: white;
+        background-color: rgba(255, 0, 0, 0.575);
+        text-align: center;
+        font-size: 300%;
+        margin-top: 50%;
+    }
+    .new3 img{
+        padding: 15px;
+        position: relative;
+        float: left;
+        width: 50%;
+        height: 50%;
+       
+    }
+    .new3 h1{
+        font-family: "Nunito";
+        padding-top: 10px;
+        font-size: 1.6rem;
+        
+    }
+    .new3 .text{
+        font-family: "Saira";
+        margin-top:20px;
+        padding: 3px;
+        font-size:1.2rem;
+    }
+    .new4 img{
+        padding: 15px;
+        position: relative;
+        float: left;
+        width: 50%;
+        height: 50%;
+       
+    }
+    .new4 h1{
+        font-family: "Nunito";
+        padding-top: 10px;
+        font-size: 1.4rem;
+        
+    }
+    .new4 .text{
+        margin-top:20px;
+        padding: 3px;
+        font-size: 1rem;
+        font-family: "Saira";
+    }
+    
+    .new5 iframe{
+        padding: 15px;
+        position: relative;
+        float: left;
+       width: 50%;
+       height: 700PX;
+    }
+    .new5 h1{
+        font-family: "Nunito";
+        padding-top: 10px;
+        font-size: 2rem;
+        
+    }
+    .new5 .text{
+        margin-top:20px;
+        padding: 3px;
+        font-size: 1.7rem;
+        font-family: "Saira";
+    }
+    .footer{
+        padding-top: 100px;
+        grid-area: footer;
+        font-size: 150%;
+        background-color: #111;
+        color: white;
+        text-align: center;
+        height: 10vh;
+    }
+    /* Flip effect beginning*/
+    .maincontainer{
+        position:relative;
+    }
+    .thecard{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        transform-style: preserve-3d;
+        transition: all 1s ease;
+    }
+    .thecard:hover{
+        transform: rotateY(180deg);
+    }
+    .thefront{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    
+    }
+    .theback{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        transform: rotateY(180deg);
+        font-family: "Saira";
+        margin-bottom:20% ;
+        margin-top: 50%;
+        margin-bottom: 20%;
+        text-align: center;
+        padding-left: 15px;
+        font-size: 150%;
+        color: white;
+        }
+    .theback div{
+        color: white;
+        font-weight: bold;
+        background-color: rgba(255, 0, 0, 0.767);
+    }
+    .icona {
+        margin-left: 45%;
+        position: relative;
+    }
+}
+@media only screen and(min-width:1500px) {
+    .new1 h1{
+        font-size: 1.2rem;
+    }
+    .new3 h1{
+        font-size: 1.2rem;
+    }
+    .new4 h1{
+        font-size: 1.2rem;
+    }
+    .new5 h1{
+        font-size: 1.2rem;
+    }
+    .new1 .text{
+     
+        font-size:0.9rem;
+    }
+    .new3 .text{
+        
+        font-size:0.9rem;
+    }
+    .new4 .text{
+      
+        font-size:0.9rem;
+    }
+
+}

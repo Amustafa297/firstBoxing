@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@100&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+ 
+}
+
+
+/* Start of the navigation  */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  #main {
+    transition: .5s;
+    padding: 16px;
+  }
+ 
+  .icona {
+    margin-left: 100px;
+  }
+.grid-template{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-areas: "navigation"
+                           "main"
+                           "nav1"
+                           "rank1"
+                           "rank2"
+                           "rank3"
+                           "rank4"
+                           "rank5"
+                           "rank6"
+                           "rank7"
+                           "rank8"
+                           "footer";
+}
+.navigation{
+    grid-area: navigation;
+    background-color:black;
+
+}
+.nav1{
+    grid-area: nav1;
+    text-align: center;
+}
+.main{
+  grid-area: main;
+}
+.main h1{
+  text-align: center;
+  font-family: "Nunito";
+  font-size: 350%;
+}
+.main img{
+  display: block;
+  width: 100%;
+}
+
+.rank1{
+    grid-area: rank1;
+  
+    width: 100%;
+   
+}
+.rank2{
+    grid-area: rank2;
+    
+    width: 100%;
+}
+.rank3{
+    grid-area: rank3;
+    
+    width: 100%;
+}
+.rank4{
+    grid-area: rank4;
+ 
+    width: 100%;
+}
+.rank5{
+    grid-area: rank5;
+    
+    width: 100%;
+}
+.rank6{
+    grid-area: rank6;
+  
+    width: 100%;
+}
+.rank7{
+    grid-area: rank7;
+    
+    width: 100%;
+}
+.rank8{
+    grid-area: rank8;
+    width: 100%;
+}
+
+.p1{
+ border-radius: 20px;
+ text-align: center;
+ padding: 15px;
+ font-size: 140%;
+ background-color: #ff00007c;
+}
+.p2{
+border-radius: 20px;
+ text-align: center;
+ padding: 15px;
+ font-size: 140%;
+ background-color: #ff00007c;
+}
+ ol {
+    text-align: center;
+    padding-top: 50px;
+    font-size: 100%;
+}
+ol li{
+    margin: 5px;
+    color: #000;
+    font-size: 150%;
+}
+h2{
+    font-size: 200%;
+    text-align: center;
+    font-family: "Nunito";
+}
+
+
+.footer{
+  padding-top: 100px;
+  grid-area: footer;
+  background-color: #111;
+  color: white;
+  text-align: center;
+  height: 10vh;
+}
+
+.wrapper {
+    
+  }
+  
+  .origins {
+    
+  }
+  
+  article {
+  
+  }
+  
+  .timeline__nav {
+  
+  }
+  .timeline__nav ul {
+  
+  }
+  .timeline__nav ul li {
+  
+  }
+  .timeline__nav ul li.active {
+  
+  }
+  .timeline__nav ul li:hover {
+  
+  }
+   
+  .milestone {
+    
+  }
+  @media only screen and (min-width:900px){
+    .grid-template{
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: 1fr 1fr ;
+      grid-template-areas: "navigation navigation"
+                             "main main"
+                             "nav1 rank1"
+                             "nav1 rank2"
+                             "nav1 rank3"
+                             "nav1 rank4"
+                             "nav1 rank5"
+                             "nav1 rank6"
+                             "nav1 rank7"
+                             "nav1 rank8"
+                             "footer footer";
+  }
+  .navigation{
+      grid-area: navigation;
+      background-color:black;
+  
+  }
+  .nav1{
+    position: relative;
+      grid-area: nav1;
+      text-align: center;
+      margin-left: 10%;
+      margin-top: 10%;
+  }
+  .main{
+    grid-area: main;
+    
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  .main h1{
+    text-align: center;
+    font-family: "Nunito";
+    font-size: 350%;
+  }
+  
+
+  .rank1{
+      grid-area: rank1;
+      margin-left: 49% ;
+      margin-right: 35%;
+      width: 100%;
+     
+  }
+  .rank2{
+      grid-area: rank2;
+      margin-left: 49% ;
+      margin-right: 35%;
+      width: 100%;
+  }
+  .rank3{
+      grid-area: rank3;
+      margin-left: 49% ;
+      margin-right: 35%;
+      width: 100%;
+  }
+  .rank4{
+      grid-area: rank4;
+      margin-left: 49% ;
+      margin-right: 35%;
+      width: 100%;
+  }
+  .rank5{
+      grid-area: rank5;
+      margin-left: 49% ;
+      margin-right: 35%;
+      width: 100%;
+  }
+  .rank6{
+      grid-area: rank6;
+      margin-left: 49% ;
+      margin-right: 35%;
+      width: 100%;
+  }
+  .rank7{
+      grid-area: rank7;
+      margin-left: 49% ;
+      margin-right: 35%;
+      width: 100%;
+  }
+  .rank8{
+      grid-area: rank8;
+      margin-left: 49% ;
+      margin-right: 35%;
+      width: 100%;
+  }
+  
+  .p1{
+   border-radius: 20px;
+   text-align: center;
+   padding: 15px;
+   font-size: 140%;
+   background-color: #ff00007c;
+  }
+  .p2{
+  border-radius: 20px;
+   text-align: center;
+   padding: 15px;
+   font-size: 140%;
+   background-color: #ff00007c;
+  }
+   ol {
+      text-align: center;
+      padding-top: 50px;
+      font-size: 100%;
+  }
+  ol li{
+      margin: 5px;
+      color: #000;
+      font-size: 150%;
+  }
+  h2{
+      font-size: 200%;
+      text-align: start;
+      font-family: "Nunito";
+  }
+  
+  .classes{
+    position: relative;
+  }
+  .footer{
+    padding-top: 100px;
+    grid-area: footer;
+    background-color: #111;
+    color: white;
+    text-align: center;
+    height: 10vh;
+  }
+  .wrapper {
+    display: block;
+    margin: 0 auto;
+    padding: 0 16.66% 50px;
+    width: 800px;
+  
+  }
+  
+  .origins {
+    line-height: 35px;
+  }
+  
+  article {
+  position: relative;
+  max-width: 980px;
+  margin: 30px auto;
+  }
+  
+  .timeline__nav {
+  position: fixed;
+  z-index: 99;
+  padding-top: 100px;
+  -webkit-transition: top .3s ease-out;
+  transition: top .3s ease-out;
+  }
+  .timeline__nav ul {
+  list-style: none;
+  list-style-position: inside;
+  margin: 15px 0;
+  }
+  .timeline__nav ul li {
+  margin: 15px 0;
+  padding-left: 0;
+  list-style-type: none;
+  color: #bfc1c3;
+  font-size: 1.1em;
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+  }
+  .timeline__nav ul li.active {
+  font-weight: bold;
+  color: #990000;
+  border-bottom: 1px dotted transparent;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  }
+  .timeline__nav ul li:hover {
+  color: #000;
+  }
+   
+  .milestone {
+    margin-top: 30px;
+  }
+  .icona {
+    margin-left: 45%;
+    position: relative;
+}
+  }

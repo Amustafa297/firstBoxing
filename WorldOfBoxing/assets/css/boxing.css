@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@100&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+ 
+}
+
+
+/* Start of the navigation  */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  #main {
+    transition: .5s;
+    padding: 16px;
+  }
+ 
+  .icona {
+   
+    margin-left: 100px;
+  }
+.grid-template{
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-template-areas:
+     "navigation"
+    "main"
+    "paragraph1"
+    "image1"
+    "paragraph2"
+    "image2"
+    "paragraph3"
+    "image3"
+    "footer"
+                            ;
+                           
+}
+/*  */
+
+.navigation{
+    grid-area: navigation;
+    background-color:black;
+
+}
+.main{
+  grid-area: main;
+  
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.main h1{
+  text-align: center;
+  font-family: "Nunito";
+  font-size: 350%;
+  margin-bottom: 10%;
+}
+
+
+.footer{
+  padding-top: 100px;
+  grid-area: footer;
+  background-color: #111;
+  color: white;
+  text-align: center;
+  height: 10vh;
+}
+
+.paragraph1{
+    grid-area: paragraph1;
+    text-align: center;
+    padding-top: 15%;
+    font-size: 230%;
+   
+    font-family: "Saira";
+}
+.paragraph2{
+    grid-area: paragraph2;
+    font-family: "Saira";
+    
+    
+}
+.paragraph2 .box{
+    font-size: 200%;
+    padding: 7px;
+}
+.paragraph2 h2{
+    text-align: center;
+    font-size: 300%;
+}
+.paragraph3{
+    grid-area: paragraph3;
+    font-family: "Saira";
+}
+.paragraph3 ol li{
+    font-size: 200%;
+    list-style: none;
+    margin-top: 50px;
+    padding: 15px;
+}
+.paragraph3 h2{
+    text-align: center;
+    font-size: 300%;
+}
+.image1{
+    grid-area: image1;  
+}
+.image2{
+    grid-area: image2;
+}
+.image3{
+    grid-area: image3;
+}
+.image1 img{
+    transition: .5s ease;
+    width: 100%;
+}
+.image2 img{
+    transition: .5s ease;
+    width: 100%;
+}
+.image3 img{ 
+    transition: .5s ease;
+    width: 100%;
+    height: 100%;
+}
+.image1 img:hover{
+    transform: scale(1.03);
+}
+.image2 img:hover{
+    transform: scale(1.03);
+}
+.image3 img:hover{
+    transform: scale(1.03);
+}
+@media only screen and (min-width:900px){
+    .grid-template{
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-areas: "navigation navigation navigation "
+        "main main main"
+         "image1 paragraph1 image2 "
+        "paragraph2 image3 paragraph3"
+         "footer footer footer "; 
+                               
+    }
+    .navigation{
+        width: 100%;
+    }
+    .main{
+        grid-area: main;
+        
+        margin-left: 20%;
+        margin-right: 20%;
+      }
+      .main h1{
+        text-align: center;
+        font-family: "Nunito";
+        font-size: 350%;
+        margin-bottom: 10%;
+      }
+    .paragraph1{
+        grid-area: paragraph1;
+        text-align: center;
+        padding-top: 10%;
+        font-size: 2.5rem;
+       
+        font-family: "Saira";
+    }
+    .paragraph2{
+        grid-area: paragraph2;
+        font-family: "Saira";
+        
+        
+    }
+    .paragraph2 .box{
+        font-size: 2rem;
+        padding: 7px;
+        text-align:center;
+    }
+    .paragraph2 h2{
+        text-align: center;
+        font-size: 300%;
+    }
+    .paragraph3{
+        grid-area: paragraph3;
+        font-family: "Saira";
+    }
+    .paragraph3 ol li{
+        font-size: 2rem;
+        list-style: none;
+        margin-top: 50px;
+        padding: 15px;
+    }
+    .paragraph3 h2{
+        text-align: center;
+        font-size: 300%;
+    }
+    .icona {
+        margin-left: 45%;
+        position: relative;
+    }
+}
+
+

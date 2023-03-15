@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@100&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+ 
+}
+
+
+/* Start of the navigation  */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  #main {
+    transition: .5s;
+    padding: 16px;
+  }
+ 
+  .icona {
+   
+    margin-left: 100px;
+  }
+.grid-template{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-areas: "navigation"
+                           "main"
+                           "fight"
+                           "footer";
+}
+.navigation{
+    grid-area: navigation;
+    background-color:black;
+
+}
+.main{
+  grid-area: main;
+}
+.main h1{
+  text-align: center;
+  font-family: "Nunito";
+  font-size: 250%;
+}
+.main img{
+  display: block;
+  width: 100%;
+}
+.fight{
+  grid-area: fight;
+  font-family: "Saira";
+  font-weight: bolder;
+  font-size: 140%;
+  text-align: left;
+margin-bottom: 50px;
+}
+.footer{
+  padding-top: 100px;
+  grid-area: footer;
+  background-color: #111;
+  color: white;
+  text-align: center;
+  height: 10vh;
+}
+@media only screen and (min-width:900px) {
+  .grid-template{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas: "navigation navigation navigation "
+                           "main main main"
+                           ". fight ."
+                           "footer footer footer";
+}
+.navigation{
+    grid-area: navigation;
+    background-color:black;
+
+}
+.icona {
+  margin-left: 45%;
+  position: relative;
+}
+.main{
+  grid-area: main;
+  
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.main h1{
+  text-align: center;
+  font-family: "Nunito";
+  font-size: 350%;
+}
+.main img{
+  display: block;
+  width: 100%;
+}
+.fight{
+  grid-area: fight;
+  font-family: "Saira";
+  font-weight: bolder;
+  font-size: 140%;
+  text-align: left;
+  padding: 10px;
+margin-bottom: 50px;
+}
+.footer{
+  padding-top: 100px;
+  grid-area: footer;
+  background-color: #111;
+  color: white;
+  text-align: center;
+  height: 10vh;
+}
+.icona {
+  margin-left: 45%;
+  position: relative;
+}
+}
